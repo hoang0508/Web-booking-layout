@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input {
+  outline: none;
+  outline-offset: 0;
+}
+
+@layer base {
+  body {
+    @apply font-primary text-base font-normal mx-auto bg-blue-500;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    max-width: 1440px;
+  }
+  input {
+    @apply outline-none;
+  }
+}
+
+input:focus + .error-input {
+  display: none;
+}
+
+.text-truncate {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+}
+
+@import "./components/swiper.scss";
+@import "./components/select.scss";
+@import "./components/datepicker.scss";
+@import "./components/dropdown.scss";

@@ -1,0 +1,42 @@
+// custom swiper
+
+.card-hover:hover .mySwiper-custom {
+  .swiper-button-prev,
+  .swiper-button-next {
+    opacity: 1;
+    visibility: visible;
+  }
+  .swiper-pagination {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.mySwiper-custom {
+  .swiper-button-prev,
+  .swiper-button-next {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.25s linear;
+    @apply bg-white w-[22px] h-[22px] rounded-full flex items-center justify-center border-2 border-ravi-gray-55;
+  }
+  .swiper-button-prev,
+  ::after {
+    @apply text-[10px] text-ravi-black-100;
+  }
+  .swiper-button-next,
+  ::after {
+    @apply text-[10px] text-ravi-black-100;
+  }
+  .swiper-pagination {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.25s linear;
+    .swiper-pagination-bullet {
+      @apply bg-ravi-gray-98 w-1 h-1;
+    }
+    .swiper-pagination-bullet-active {
+      @apply bg-white w-[6px] h-[6px];
+    }
+  }
+}

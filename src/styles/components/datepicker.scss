@@ -1,0 +1,144 @@
+// Custom date picker hotel
+
+body {
+  .date-hotel--custom {
+    width: 100%;
+    height: 66px;
+    border: 0;
+    box-shadow: unset;
+    position: relative;
+    line-height: unset;
+    .ant-picker-input {
+      @apply font-primary text-ravi-black-100 text-sm font-normal;
+      &:nth-child(1) {
+        margin-left: 25px;
+      }
+    }
+    .ant-picker-input > input::placeholder {
+      @apply font-primary text-ravi-black-100 text-sm font-normal;
+    }
+    .ant-picker-range-separator {
+      padding: 0;
+      position: relative;
+      color: transparent;
+      .ant-picker-separator {
+        display: none;
+      }
+    }
+    .ant-picker-range-separator:after {
+      content: url("../../assets/images/line.svg");
+      position: absolute;
+      top: -3px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding-right: 40px;
+    }
+    .ant-picker-active-bar {
+      @apply bg-primary;
+    }
+    &::before {
+      content: url("../../assets/images/icon-clendar.svg");
+      position: absolute;
+      top: 55%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.custom-date--dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  left: 27% !important;
+  top: 80px !important;
+  .ant-picker-range-wrapper {
+    .ant-picker-range-arrow {
+      display: none;
+    }
+    .ant-picker-panel-container {
+      width: 100%;
+      background: #ffffff;
+      box-shadow: 2px 4px 8px rgba(37, 37, 37, 0.25);
+      border-radius: 8px;
+      padding: 21px 26px 29px 24px;
+      .ant-picker-panel-layout {
+        display: grid;
+        .ant-picker-panels {
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+          gap: 0 26px;
+          .ant-picker-panel:not(:last-child) {
+            width: 100%;
+          }
+          .ant-picker-panel {
+            flex: 1;
+          }
+          .ant-picker-header {
+            padding: 0;
+            align-items: center;
+            border-bottom: none;
+            margin-bottom: 22px;
+            .ant-picker-header-super-prev-btn,
+            .ant-picker-header-super-next-btn {
+              display: none;
+            }
+            .ant-picker-header-super-prev-btn {
+              min-width: unset;
+            }
+            .ant-picker-super-prev-icon,
+            .ant-picker-super-next-icon {
+              display: none;
+            }
+            .ant-picker-header-view {
+              line-height: unset;
+              @apply font-primary font-normal text-ravi-black-100 text-base;
+              button {
+                line-height: unset;
+              }
+            }
+          }
+          .ant-picker-body {
+            padding: 0;
+            .ant-picker-content {
+              width: 100%;
+              thead {
+                tr {
+                  display: flex;
+                  gap: 0 18px;
+                  margin-bottom: 40px;
+                }
+              }
+              .ant-picker-cell-disabled,
+              .ant-picker-cell-in-range {
+                &::before {
+                  background-color: #fff7eb;
+                  width: 40px;
+                  height: 40px;
+                }
+              }
+              th {
+                @apply font-primary font-normal text-sm text-ravi-black-100;
+              }
+              td.ant-picker-cell {
+                .ant-picker-cell-inner {
+                  @apply font-primary font-normal text-sm text-ravi-black-100;
+                }
+              }
+              .ant-picker-cell-today .ant-picker-cell-inner::before {
+                border: none;
+              }
+              td.ant-picker-cell-range-start,
+              td.ant-picker-cell-range-end {
+                .ant-picker-cell-inner {
+                  @apply flex items-center justify-center w-10 h-10 bg-primary border-primary rounded-lg text-white;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

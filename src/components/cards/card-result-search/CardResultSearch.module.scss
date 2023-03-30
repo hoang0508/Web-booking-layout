@@ -1,0 +1,28 @@
+.info-room {
+  &--dots {
+    position: relative;
+    &::before {
+      content: "";
+      left: -50%;
+      position: absolute;
+      transform: translateX(16px);
+      width: 4px;
+      height: 4px;
+      @apply bg-text100 rounded-full;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      right: -50%;
+      transform: translateX(-16px);
+      width: 4px;
+      height: 4px;
+      @apply bg-text100 rounded-full;
+    }
+  }
+}
+
+.card-hover--result {
+  .swiper {
+  }
+}

@@ -1,0 +1,36 @@
+.cutom-dropdown--hotel {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 66px;
+}
+
+// .ant-dropdown {
+//   left: unset !important;
+//   top: unset !important;
+// }
+
+body {
+  .cutom-dropdown--show {
+    @apply absolute bg-white rounded-lg w-[360px]  right-[20%] top-0;
+    .ant-dropdown-menu-item-group-title {
+      @apply font-primary font-bold text-xs text-ravi-gray-98 uppercase;
+      padding: 16px 0 16px 8px !important;
+    }
+    .ant-dropdown-menu-item-group-list {
+      margin: 0 !important;
+      .ant-dropdown-menu-item {
+        padding: 0;
+        &:hover {
+          background: unset;
+        }
+      }
+    }
+    .ant-dropdown-menu {
+      box-shadow: unset;
+      padding: 0;
+      background-color: transparent;
+      border-radius: 0;
+    }
+  }
+}
