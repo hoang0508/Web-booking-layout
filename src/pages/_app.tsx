@@ -1,10 +1,18 @@
-import type { AppProps } from "next/app";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "@/styles/globals.scss";
+import { AppPropsWithLayout } from "@/@types";
+import { EmptyLayout } from "@/components/layouts";
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+function MyApp({ Component, pageProps }: AppPropsWithLayout) {
+  const Layout = Component.Layout ?? EmptyLayout;
+  return (
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+  );
 }
+
+export default MyApp;

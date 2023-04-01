@@ -1,7 +1,11 @@
 import { FilterSearch } from "@/components/filter-search";
+import { LayoutHome } from "@/components/layouts";
+import { Footer } from "@/components/layouts/footer";
+import { HeaderMenuSearch, HeaderSearchV2 } from "@/components/layouts/headers";
+import HeaderBack from "@/components/layouts/headers/HeaderBack";
 import Head from "next/head";
 
-export default function Home() {
+const Home = () => {
   return (
     <>
       <Head>
@@ -10,16 +14,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {/* <div className="grid grid-cols-4 gap-6 p-3">
-        {Array(4)
-          .fill(0)
-          .map((item, index) => (
-            <CardResultSearch key={index} />
-          ))}
-      </div> */}
-      <div className="p-5">
-        <FilterSearch />
-      </div>
+      <Footer />
     </>
   );
-}
+};
+
+// Home.Layout = LayoutHome;
+
+export default Home;

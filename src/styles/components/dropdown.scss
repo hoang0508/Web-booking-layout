@@ -1,18 +1,18 @@
 .cutom-dropdown--hotel {
-  width: 100%;
   display: flex;
   align-items: center;
   height: 66px;
 }
 
-// .ant-dropdown {
-//   left: unset !important;
-//   top: unset !important;
-// }
+.ml-custom {
+  .ant-space {
+    margin-left: 30px;
+  }
+}
 
 body {
   .cutom-dropdown--show {
-    @apply absolute bg-white rounded-lg w-[360px]  right-[20%] top-0;
+    @apply absolute bg-white rounded-lg w-[360px]  right-[0%] top-0;
     .ant-dropdown-menu-item-group-title {
       @apply font-primary font-bold text-xs text-ravi-gray-98 uppercase;
       padding: 16px 0 16px 8px !important;
