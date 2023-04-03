@@ -11,7 +11,7 @@ input {
 
 @layer base {
   body {
-    @apply font-primary text-base font-normal mx-auto bg-blue-500;
+    @apply font-primary text-base font-normal mx-auto;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     max-width: 1440px;
@@ -23,6 +23,16 @@ input {
 
 input:focus + .error-input {
   display: none;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  max-width: 1344px;
+  margin: 0 auto;
 }
 
 .text-truncate {

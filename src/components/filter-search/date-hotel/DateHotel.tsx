@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import { ConfigProvider } from "antd";
 import { DatePicker } from "antd";
 import dayjs from "dayjs";
-import customParseFormat from "dayjs/plugin/customParseFormat";
+import localizedFormat from "dayjs/plugin/localizedFormat";
+import updateLocale from "dayjs/plugin/updateLocale";
+
 import {
   IconArrowDown,
   IconArrowLeft,
@@ -15,11 +17,28 @@ interface IDateHotel {
   className: string;
 }
 
-dayjs.extend(customParseFormat);
+dayjs.extend(localizedFormat);
+dayjs.extend(updateLocale);
 
+dayjs.updateLocale("vi", {
+  monthsShort: [
+    "Tháng 1",
+    "Tháng 2",
+    "Tháng 3",
+    "Tháng 4",
+    "Tháng 5",
+    "Tháng 6",
+    "Tháng 7",
+    "Tháng 8",
+    "Tháng 9",
+    "Tháng 10",
+    "Tháng 11",
+    "Tháng 12",
+  ],
+});
 const { RangePicker } = DatePicker;
 
-const dateFormat = "YYYY/MM/DD";
+const dateFormat = "llll";
 
 const DateHotel = ({ className }: IDateHotel) => {
   const [dateValue, setDateValue] = useState<any>(null);
@@ -31,10 +50,6 @@ const DateHotel = ({ className }: IDateHotel) => {
         suffixIcon={<IconArrowDown />}
         clearIcon={false}
         placeholder={["Nhận phòng", "Trả phòng"]}
-        defaultValue={[
-          dayjs("2015/01/01", dateFormat),
-          dayjs("2015/01/01", dateFormat),
-        ]}
         value={dateValue}
         prevIcon={<IconArrowLeft />}
         nextIcon={<IconArrowRight />}

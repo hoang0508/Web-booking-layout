@@ -1,4 +1,4 @@
-// custom swiper
+// custom swiper card
 
 .card-hover:hover .mySwiper-custom {
   .swiper-button-prev,
@@ -38,5 +38,28 @@
     .swiper-pagination-bullet-active {
       @apply bg-white w-[6px] h-[6px];
     }
+  }
+}
+
+// custom swiper banner destination
+.banner-destination-swiper {
+  .swiper-button-prev,
+  .swiper-button-next {
+    @apply bg-white w-9 h-9 rounded-full flex items-center justify-center border-2 border-ravi-gray-55 mt-0 -translate-y-[45%];
+  }
+  .swiper-button-prev,
+  ::after {
+    @apply text-[14px] text-ravi-black-100;
+  }
+  .swiper-button-next,
+  ::after {
+    @apply text-[14px] text-ravi-black-100;
+  }
+  .swiper-button-disabled {
+    display: none;
+  }
+  .swiper-slide {
+    width: 105px !important;
+    height: auto;
   }
 }

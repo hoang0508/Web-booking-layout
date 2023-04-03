@@ -12,6 +12,10 @@ body {
     padding-left: 20px;
     .ant-picker-input {
       @apply font-primary text-ravi-black-100 text-sm font-normal;
+      input {
+        width: unset;
+        flex: unset;
+      }
       &:nth-child(1) {
         margin-left: 25px;
       }

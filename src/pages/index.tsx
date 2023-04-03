@@ -1,8 +1,4 @@
-import { FilterSearch } from "@/components/filter-search";
-import { LayoutHome } from "@/components/layouts";
-import { Footer } from "@/components/layouts/footer";
-import { HeaderMenuSearch, HeaderSearchV2 } from "@/components/layouts/headers";
-import HeaderBack from "@/components/layouts/headers/HeaderBack";
+import { BannerHomeDestination } from "@/components/banners";
 import Head from "next/head";
 
 const Home = () => {
@@ -14,7 +10,10 @@ const Home = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Footer />
+      <div className="container py-5">
+        <BannerHomeDestination />
+      </div>
+      {/* <FilterSearch /> */}
     </>
   );
 };
