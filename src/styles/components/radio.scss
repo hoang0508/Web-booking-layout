@@ -1,0 +1,29 @@
+.custom-radio {
+  .ant-radio {
+    &-inner {
+      @apply w-5 h-5 border-2 border-ravi-gray-80;
+    }
+  }
+  .ant-radio-checked {
+    .ant-radio-inner {
+      &:hover {
+        @apply border-2 bg-transparent border-primary;
+      }
+      &::after {
+        @apply w-[10px] h-[10px] bg-primary flex  items-center justify-center top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4;
+        margin: unset;
+      }
+      @apply border-2 bg-transparent border-primary;
+    }
+  }
+  &--text {
+    @apply text-ravi-black-100 font-primary font-normal text-xs;
+  }
+}
+
+.ant-radio-wrapper:hover
+  :where(.css-dev-only-do-not-override-1e3x2xa).ant-radio-wrapper,
+:where(.css-dev-only-do-not-override-1e3x2xa).ant-radio-wrapper:hover
+  .ant-radio-inner {
+  @apply border-2 border-ravi-gray-80;
+}

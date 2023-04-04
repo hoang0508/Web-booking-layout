@@ -1,2 +1,4 @@
 import CardHome from "./CardHome";
-export { CardHome };
+import CardTrip from "./CardTrip";
+
+export { CardHome, CardTrip };

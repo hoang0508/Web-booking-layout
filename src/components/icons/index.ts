@@ -7,11 +7,14 @@ import IconBedRoom from "./IconBedRoom";
 import IconCar from "./IconCar";
 import IconClose from "./IconClose";
 import IconFacebook from "./IconFacebook";
+import IconFilter from "./IconFilter";
 import IconFly from "./IconFly";
 import IconHeart from "./IconHeart";
 import IconHelp from "./IconHelp";
 import IconHotel from "./IconHotel";
 import IconInstagram from "./IconInstagram";
+import IconLine from "./IconLine";
+import IconLineV2 from "./IconLineV2";
 import IconLocation from "./IconLocation";
 import IconMinus from "./IconMinus";
 import IconPeople from "./IconPeople";
@@ -22,6 +25,7 @@ import IconStar from "./IconStar";
 import IconUser from "./IconUser";
 import IconUserV2 from "./IconUserV2";
 import IconYoutube from "./IconYoutube";
+import IconArrowDownV2 from "./iconArrowDownV2";
 
 export {
   IconHeart,
@@ -48,4 +52,8 @@ export {
   IconInstagram,
   IconYoutube,
   IconFacebook,
+  IconLine,
+  IconFilter,
+  IconArrowDownV2,
+  IconLineV2,
 };

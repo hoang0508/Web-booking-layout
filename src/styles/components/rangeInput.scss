@@ -1,0 +1,28 @@
+.custom-input-range {
+  .ant-slider-track {
+    @apply bg-ravi-gray-300 border border-ravi-gray-300 h-[2px];
+  }
+  .ant-slider-rail {
+    @apply w-full h-[2px];
+  }
+  .ant-slider-handle {
+    inset-block-start: 0px;
+    width: 12px;
+    height: 12px;
+    &::after {
+      @apply w-3 h-3 border border-ravi-gray-98 rounded-full;
+      box-shadow: unset !important;
+    }
+  }
+}
+
+:where(.css-dev-only-do-not-override-1e3x2xa).ant-slider
+  .ant-slider-handle:hover::after,
+:where(.css-dev-only-do-not-override-1e3x2xa).ant-slider
+  .ant-slider-handle:active::after,
+:where(.css-dev-only-do-not-override-1e3x2xa).ant-slider
+  .ant-slider-handle:focus::after {
+  box-shadow: unset;
+  inset-inline-start: unset;
+  inset-block-start: unset;
+}

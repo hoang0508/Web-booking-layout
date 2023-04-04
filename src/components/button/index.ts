@@ -1,3 +1,5 @@
 import Button from "./Button";
+import ButtonFilter from "./ButtonFilter";
+import ButtonTransparent from "./ButtonTransparent";
 
-export { Button };
+export { Button, ButtonTransparent, ButtonFilter };

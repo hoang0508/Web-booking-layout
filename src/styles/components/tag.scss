@@ -1,0 +1,20 @@
+.custom-tag {
+  @apply flex items-center justify-center gap-x-3 py-2 px-6 border-transparent rounded-lg bg-ravi-gray-55 text-primary text-xs font-bold font-primary cursor-pointer;
+  .ant-tag-close-icon {
+    svg {
+      path {
+        @apply fill-primary;
+      }
+    }
+  }
+  &:hover {
+    @apply bg-primary text-white duration-300 ease-out;
+    .ant-tag-close-icon {
+      svg {
+        path {
+          @apply fill-white;
+        }
+      }
+    }
+  }
+}

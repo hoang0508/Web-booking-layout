@@ -1,4 +1,4 @@
-import { BannerHomeDestination } from "@/components/banners";
+import { ResultSearch } from "@/components/result-search";
 import Head from "next/head";
 
 const Home = () => {
@@ -10,10 +10,9 @@ const Home = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="container py-5">
-        <BannerHomeDestination />
+      <div className="p-5">
+        <ResultSearch />
       </div>
-      {/* <FilterSearch /> */}
     </>
   );
 };

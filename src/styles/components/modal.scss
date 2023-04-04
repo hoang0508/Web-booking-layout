@@ -1,0 +1,42 @@
+.ant-modal-root {
+  .ant-modal-wrap {
+    overflow: hidden;
+  }
+  .modal-custom-filter {
+    width: 695px !important;
+    top: 50px;
+    .ant-modal-content {
+      @apply max-h-[90vh] overflow-y-auto;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      @apply bg-white rounded-lg p-0;
+      box-shadow: unset;
+      .ant-modal-close {
+        @apply absolute left-5 top-5 bg-transparent text-ravi-black-100 w-5 h-5;
+      }
+      .ant-modal-header {
+        @apply border border-b-ravi-gray-55 py-[21px] mb-0 relative;
+
+        .ant-modal-title {
+          @apply text-center font-primary text-ravi-black-100 text-base font-bold;
+        }
+      }
+      .ant-modal-body {
+        @apply pt-8 px-6;
+      }
+      .ant-modal-footer {
+        margin-top: unset;
+        @apply pt-3 pb-4 pr-6 flex justify-end;
+        .ant-btn-default {
+          @apply bg-transparent border-none font-primary text-primary text-xs font-bold;
+        }
+        .ant-btn-primary {
+          @apply flex items-center justify-center bg-primary py-2 px-6 text-white text-xs font-primary font-bold tracking-[0.005em];
+        }
+      }
+    }
+  }
+}

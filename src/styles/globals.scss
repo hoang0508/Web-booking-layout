@@ -44,7 +44,20 @@ input:focus + .error-input {
   word-break: break-word;
 }
 
+.scroll-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scroll-hidden::-webkit-scrollbar {
+  display: none;
+}
+
 @import "./components/swiper.scss";
 @import "./components/select.scss";
 @import "./components/datepicker.scss";
 @import "./components/dropdown.scss";
+@import "./components/checkbox.scss";
+@import "./components/rangeInput.scss";
+@import "./components/radio.scss";
+@import "./components/modal.scss";
+@import "./components/tag.scss";

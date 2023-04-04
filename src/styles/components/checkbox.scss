@@ -1,0 +1,59 @@
+// Custom checkbox
+
+.checkbox-custom {
+  @apply flex items-center;
+  .ant-checkbox {
+    top: unset;
+    &-inner {
+      @apply w-5 h-5 border-2 border-ravi-gray-80 rounded;
+    }
+  }
+  .ant-checkbox-checked {
+    .ant-checkbox-inner {
+      &::after {
+        @apply w-[6px] h-3;
+      }
+      @apply border-transparent bg-primary;
+    }
+  }
+  .checkbox-label {
+    @apply font-primary text-ravi-black-100 font-normal text-sm tracking-[0.005em];
+  }
+}
+
+:where(.css-dev-only-do-not-override-1e3x2xa).ant-checkbox-wrapper:not(
+    .ant-checkbox-wrapper-disabled
+  ):hover
+  .ant-checkbox-inner,
+:where(.css-dev-only-do-not-override-1e3x2xa).ant-checkbox:not(
+    .ant-checkbox-disabled
+  ):hover
+  .ant-checkbox-inner {
+  border-color: unset;
+  @apply w-5 h-5 border-2 border-ravi-gray-80 rounded;
+}
+
+:where(.css-dev-only-do-not-override-1e3x2xa).ant-checkbox-wrapper:not(
+    .ant-checkbox-wrapper-disabled
+  ):hover
+  .ant-checkbox-checked:not(.ant-checkbox-disabled)
+  .ant-checkbox-inner {
+  // border-color: transparent;
+  @apply bg-primary;
+}
+
+:where(.css-dev-only-do-not-override-1e3x2xa).ant-checkbox-wrapper:not(
+    .ant-checkbox-wrapper-disabled
+  ):hover
+  .ant-checkbox-checked:not(.ant-checkbox-disabled):after {
+  border-color: unset;
+}
+
+:where(.css-dev-only-do-not-override-1e3x2xa).ant-checkbox-checked:after {
+  border: 0;
+}
+
+:where(.css-dev-only-do-not-override-1e3x2xa).ant-checkbox-wrapper:hover
+  .ant-checkbox:after {
+  visibility: unset;
+}

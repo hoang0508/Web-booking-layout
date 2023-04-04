@@ -10,6 +10,7 @@ import { Keyboard, Pagination, Navigation } from "swiper";
 const CardHome = () => {
   return (
     <div className="bg-white rounded-lg cursor-pointer card-hover">
+      {/* Image */}
       <Swiper
         slidesPerView={1}
         keyboard={{
@@ -35,6 +36,8 @@ const CardHome = () => {
           <CardHomeImage />
         </SwiperSlide>
       </Swiper>
+
+      {/* Content */}
       <CardHomeContent />
     </div>
   );
