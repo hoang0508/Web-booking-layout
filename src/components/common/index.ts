@@ -1,3 +1,3 @@
 import { HeadingFilter } from "./heading";
-
-export { HeadingFilter };
+import { Seemore } from "./see-more";
+export { HeadingFilter, Seemore };

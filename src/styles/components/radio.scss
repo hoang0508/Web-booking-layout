@@ -1,3 +1,4 @@
+// Custom radio
 .custom-radio {
   .ant-radio {
     &-inner {
@@ -26,4 +27,16 @@
 :where(.css-dev-only-do-not-override-1e3x2xa).ant-radio-wrapper:hover
   .ant-radio-inner {
   @apply border-2 border-ravi-gray-80;
+}
+
+:where(.css-dev-only-do-not-override-1e3x2xa).ant-radio-wrapper
+  span.ant-radio
+  + * {
+  padding-inline-start: unset;
+  padding-inline-end: unset;
+}
+
+// Custom-radio-payment
+.custom-radio-payment {
+  @apply flex items-center gap-x-[18px];
 }

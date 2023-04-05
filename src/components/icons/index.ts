@@ -17,6 +17,7 @@ import IconLine from "./IconLine";
 import IconLineV2 from "./IconLineV2";
 import IconLocation from "./IconLocation";
 import IconMinus from "./IconMinus";
+import IconPayment from "./IconPayment";
 import IconPeople from "./IconPeople";
 import IconPlus from "./IconPlus";
 import IconRoom from "./IconRoom";
@@ -25,7 +26,10 @@ import IconStar from "./IconStar";
 import IconUser from "./IconUser";
 import IconUserV2 from "./IconUserV2";
 import IconYoutube from "./IconYoutube";
-import IconArrowDownV2 from "./iconArrowDownV2";
+import IconArrowDownV2 from "./IconArrowDownV2";
+import IconLineV3 from "./IconLineV3";
+import IconClock from "./IconClock";
+import IconInfo from "./IconInfo";
 
 export {
   IconHeart,
@@ -56,4 +60,8 @@ export {
   IconFilter,
   IconArrowDownV2,
   IconLineV2,
+  IconPayment,
+  IconLineV3,
+  IconClock,
+  IconInfo,
 };

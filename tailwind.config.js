@@ -45,10 +45,12 @@ module.exports = {
         "ravi-gray-98": "#989898",
         "ravi-gray-ba": "#BABABA",
         "ravi-gray-300": "#B3B3B3",
+        "ravi-bg-f5": "#FFFBF5",
         "ravi-hover-08": "rgba(186, 146, 86, 0.08)",
         "ravi-focus-12": "rgba(186, 146, 86, 0.12)",
         "ravi-active-12": "rgba(186, 146, 86, 0.12)",
-        warning: "#FF8000",
+        "ravi-warning-80": "#FF8000",
+        "ravi-warning-50": "#FFF2E5",
       },
       boxShadow: {
         buttonShadow: `0px 1px 1px rgba(0, 0, 0, 0.15), 0px 1px 2px 1px rgba(0, 0, 0, 0.1)`,
