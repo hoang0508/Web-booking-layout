@@ -1,0 +1,17 @@
+.tab-custom {
+  .ant-tabs-nav-wrap {
+    .ant-tabs-nav-list {
+      .ant-tabs-tab-active {
+        .ant-tabs-tab-btn {
+          @apply text-primary;
+        }
+      }
+      .ant-tabs-tab {
+        @apply font-primary text-ravi-black-100 text-sm font-normal;
+      }
+      .ant-tabs-ink-bar {
+        @apply bg-primary rounded-tl-full rounded-tr-full;
+      }
+    }
+  }
+}

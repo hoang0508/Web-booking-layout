@@ -11,7 +11,7 @@
         @apply border-2 bg-transparent border-primary;
       }
       &::after {
-        @apply w-[10px] h-[10px] bg-primary flex  items-center justify-center top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4;
+        @apply w-[10px] h-[10px] bg-primary flex items-center justify-center top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4;
         margin: unset;
       }
       @apply border-2 bg-transparent border-primary;

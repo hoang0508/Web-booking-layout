@@ -30,7 +30,9 @@ import IconArrowDownV2 from "./IconArrowDownV2";
 import IconLineV3 from "./IconLineV3";
 import IconClock from "./IconClock";
 import IconInfo from "./IconInfo";
-
+import IconUserV3 from "./IconUserV3";
+import IconCheck from "./IconCheck";
+import IconRoundCloseV2 from "./IconRoundCloseV2";
 export {
   IconHeart,
   IconStar,
@@ -64,4 +66,7 @@ export {
   IconLineV3,
   IconClock,
   IconInfo,
+  IconUserV3,
+  IconCheck,
+  IconRoundCloseV2,
 };

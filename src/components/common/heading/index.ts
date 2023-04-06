@@ -1,3 +1,4 @@
 import HeadingFilter from "./HeadingFilter";
+import HeadingInfo from "./HeadingInfo";
 
-export { HeadingFilter };
+export { HeadingFilter, HeadingInfo };

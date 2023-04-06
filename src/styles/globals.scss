@@ -11,13 +11,19 @@ input {
 
 @layer base {
   body {
-    @apply font-primary text-base font-normal mx-auto bg-white;
+    @apply font-primary text-base font-normal text-ravi-black-100 mx-auto bg-white;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     max-width: 1440px;
   }
   input {
     @apply outline-none;
+  }
+}
+
+@layer components {
+  .text-info-room {
+    @apply font-primary font-normal text-ravi-black-100 text-sm;
   }
 }
 
@@ -61,3 +67,4 @@ input:focus + .error-input {
 @import "./components/radio.scss";
 @import "./components/modal.scss";
 @import "./components/tag.scss";
+@import "./components/tab.scss";
