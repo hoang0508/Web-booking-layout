@@ -5,13 +5,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 // import required modules
 import { Keyboard, Pagination, Navigation } from "swiper";
-import styles from "./CardResultSearch.module.scss";
 
 const CardResultSearch = () => {
   return (
-    <div
-      className={`bg-white rounded-lg cursor-pointer card-hover ${styles["card-hover--result"]}`}
-    >
+    <div className={`bg-white rounded-lg cursor-pointer card-hover`}>
       <Swiper
         slidesPerView={1}
         keyboard={{

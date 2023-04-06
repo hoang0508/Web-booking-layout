@@ -32,7 +32,7 @@ const CardHomeContent = () => {
           107 Võ Nguyên Giáp, Đà Nẵng
         </p>
       </div>
-      <div className="">
+      <div>
         <span className="text-sm font-normal">Bắt đầu từ </span> {"  "}{" "}
         <strong className="text-base font-bold">1.354.815đ</strong>
       </div>

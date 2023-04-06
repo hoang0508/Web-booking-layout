@@ -34,12 +34,17 @@ module.exports = {
       content: {
         line: 'url("../assets/images/line-v2.svg")',
       },
+      backgroundImage: {
+        "gradient-blog":
+          "linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9),#D9D9D9)",
+      },
       colors: {
         primary: "#BA9256",
         hover: "#BA9968",
         focus: "#BA9C70",
         active: "#BA9C70",
         "ravi-black-100": "#252525",
+        "ravi-black-20": "rgba(37, 37, 37, 0.2)",
         "ravi-gray-80": "#808080",
         "ravi-gray-55": "#E5E5E5",
         "ravi-gray-98": "#989898",

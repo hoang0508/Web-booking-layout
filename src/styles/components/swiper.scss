@@ -3,20 +3,17 @@
 .card-hover:hover .mySwiper-custom {
   .swiper-button-prev,
   .swiper-button-next {
-    opacity: 1;
-    visibility: visible;
+    @apply opacity-100 visible;
   }
   .swiper-pagination {
-    opacity: 1;
-    visibility: visible;
+    @apply opacity-100 visible;
   }
 }
 
 .mySwiper-custom {
   .swiper-button-prev,
   .swiper-button-next {
-    opacity: 0;
-    visibility: hidden;
+    @apply opacity-0 invisible;
     transition: all 0.25s linear;
     @apply bg-white w-[22px] h-[22px] rounded-full flex items-center justify-center border-2 border-ravi-gray-55;
   }
@@ -61,5 +58,24 @@
   .swiper-slide {
     width: 105px !important;
     height: auto;
+  }
+}
+
+// Custom swiper details
+.mySwiper-custom-details {
+  .swiper-button-prev,
+  .swiper-button-next {
+    &::after {
+      @apply text-[14px];
+    }
+    @apply opacity-100 visible w-9 h-9;
+  }
+  .swiper-button-disabled {
+    @apply opacity-[0.38];
+  }
+  .swiper-pagination {
+    width: unset;
+    left: unset;
+    @apply opacity-100 visible right-3 bottom-[10px] bg-ravi-black-100 text-white py-[6px] px-[14px] rounded-lg font-primary text-xs font-normal;
   }
 }

@@ -33,6 +33,8 @@ import IconInfo from "./IconInfo";
 import IconUserV3 from "./IconUserV3";
 import IconCheck from "./IconCheck";
 import IconRoundCloseV2 from "./IconRoundCloseV2";
+import IconHeartRed from "./IconHeartRed";
+
 export {
   IconHeart,
   IconStar,
@@ -69,4 +71,5 @@ export {
   IconUserV3,
   IconCheck,
   IconRoundCloseV2,
+  IconHeartRed,
 };
