@@ -34,6 +34,12 @@ import IconUserV3 from "./IconUserV3";
 import IconCheck from "./IconCheck";
 import IconRoundCloseV2 from "./IconRoundCloseV2";
 import IconHeartRed from "./IconHeartRed";
+import IconClendar from "./IconClendar";
+import IconDump from "./IconDump";
+import IconWifi from "./IconWifi";
+import IconCarV2 from "./IconCarV2";
+import IconCarV3 from "./IconCarV3";
+import IconCheckV2 from "./IconCheckV2";
 
 export {
   IconHeart,
@@ -72,4 +78,10 @@ export {
   IconCheck,
   IconRoundCloseV2,
   IconHeartRed,
+  IconClendar,
+  IconDump,
+  IconWifi,
+  IconCarV2,
+  IconCarV3,
+  IconCheckV2,
 };

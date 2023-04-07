@@ -1,0 +1,19 @@
+.custom-textarea {
+  @apply bg-white border border-ravi-gray-ba pt-4 pl-3 font-primary text-sm font-normal text-ravi-black-100;
+  &::placeholder {
+    @apply font-normal font-primary text-ravi-black-100 text-sm;
+  }
+}
+
+:where(.css-dev-only-do-not-override-1e3x2xa).ant-input:hover {
+  @apply bg-white border border-ravi-gray-ba;
+  border-inline-end-width: 1px;
+}
+
+:where(.css-dev-only-do-not-override-1e3x2xa).ant-input:focus,
+:where(.css-dev-only-do-not-override-1e3x2xa).ant-input-focused {
+  @apply bg-white border border-primary;
+  box-shadow: unset;
+  border-inline-end-width: 1px;
+  outline: 0;
+}

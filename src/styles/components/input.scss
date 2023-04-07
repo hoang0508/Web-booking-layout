@@ -1,0 +1,33 @@
+.custom-input {
+  @apply bg-white rounded-lg border border-ravi-gray-ba font-primary py-[14px] pl-3;
+  &:hover {
+    @apply bg-ravi-gray-55;
+  }
+  &:hover .ant-input {
+    @apply bg-ravi-gray-55;
+  }
+  &:focus {
+    box-shadow: unset !important;
+    @apply border-primary bg-white;
+  }
+  .ant-input {
+    &::placeholder {
+      @apply font-normal font-primary text-ravi-gray-80 text-sm;
+    }
+  }
+}
+
+:where(.css-dev-only-do-not-override-1e3x2xa).ant-input-affix-wrapper:not(
+    .ant-input-affix-wrapper-disabled
+  ):hover {
+  @apply border-ravi-gray-ba;
+
+  border-inline-end-width: 1px;
+  z-index: 1;
+}
+
+:where(.css-dev-only-do-not-override-1e3x2xa).ant-input-affix-wrapper:focus,
+:where(.css-dev-only-do-not-override-1e3x2xa).ant-input-affix-wrapper-focused {
+  box-shadow: unset;
+  @apply border-primary;
+}

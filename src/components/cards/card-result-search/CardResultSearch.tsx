@@ -10,7 +10,8 @@ const CardResultSearch = () => {
   return (
     <div className={`bg-white rounded-lg cursor-pointer card-hover`}>
       <Swiper
-        slidesPerView={1}
+        slidesPerView={"auto"}
+        speed={500}
         keyboard={{
           enabled: true,
         }}
@@ -19,7 +20,7 @@ const CardResultSearch = () => {
         }}
         navigation={true}
         modules={[Keyboard, Pagination, Navigation]}
-        className="mySwiper-custom"
+        className="mySwiper-custom mySwiper-custom-search"
       >
         <SwiperSlide>
           <CardResultImage />

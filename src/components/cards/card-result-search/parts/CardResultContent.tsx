@@ -1,14 +1,13 @@
 import { IconAcreage, IconLocation, IconStar } from "@/components/icons";
 import React from "react";
-import styles from "../CardResultSearch.module.scss";
+// import styles from "../CardResultSearch.module.scss";
 
 const CardResultContent = () => {
   return (
     <div className="pt-3 pb-4">
       <div
-        className={`${
-          styles["info-room"] || ""
-        } flex items-center gap-x-[30px] mb-3`}
+        className={`
+         flex items-center gap-x-[30px] mb-3`}
       >
         <div className="flex items-center gap-x-2">
           <span>
@@ -18,9 +17,7 @@ const CardResultContent = () => {
             54 m<sup>2</sup>
           </span>
         </div>
-        <div
-          className={`flex items-center gap-x-2 ${styles["info-room--dots"]}`}
-        >
+        <div className={`flex items-center gap-x-2`}>
           <span>
             <IconAcreage />
           </span>

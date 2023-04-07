@@ -123,7 +123,7 @@ const dataThumbChild = [
   },
 ];
 
-const CardDetails = () => {
+const CardDetailsImage = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState<any>(null);
   return (
     <>
@@ -189,4 +189,4 @@ const CardDetails = () => {
   );
 };
 
-export default CardDetails;
+export default CardDetailsImage;

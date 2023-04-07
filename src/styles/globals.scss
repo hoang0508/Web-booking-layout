@@ -25,6 +25,9 @@ input {
   .text-info-room {
     @apply font-primary font-normal text-ravi-black-100 text-sm;
   }
+  .border-bottom-gray {
+    @apply border-b border-ravi-gray-55 pb-4 mb-4;
+  }
 }
 
 input:focus + .error-input {
@@ -68,3 +71,5 @@ input:focus + .error-input {
 @import "./components/modal.scss";
 @import "./components/tag.scss";
 @import "./components/tab.scss";
+@import "./components/input.scss";
+@import "./components/textarea.scss";

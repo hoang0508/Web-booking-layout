@@ -6,7 +6,7 @@
     @apply opacity-100 visible;
   }
   .swiper-pagination {
-    @apply opacity-100 visible;
+    @apply opacity-100 visible bottom-[-1px];
   }
 }
 
@@ -16,6 +16,14 @@
     @apply opacity-0 invisible;
     transition: all 0.25s linear;
     @apply bg-white w-[22px] h-[22px] rounded-full flex items-center justify-center border-2 border-ravi-gray-55;
+  }
+  .swiper-button-next::after {
+    content: url("../../assets/images/icon-next.svg");
+    @apply top-2/4 left-2/4;
+  }
+  .swiper-button-prev::after {
+    content: url("../../assets/images/icon-prev.svg");
+    @apply top-2/4 left-2/4;
   }
   .swiper-button-prev,
   ::after {
@@ -33,8 +41,17 @@
       @apply bg-ravi-gray-98 w-1 h-1;
     }
     .swiper-pagination-bullet-active {
-      @apply bg-white w-[6px] h-[6px];
+      @apply bg-white w-[6px] h-[6px] rounded-full;
     }
+  }
+}
+
+.mySwiper-custom-search {
+  .swiper-button-prev,
+  .swiper-button-next {
+    @apply opacity-0 invisible;
+    transition: all 0.25s linear;
+    @apply bg-white w-7 h-7;
   }
 }
 

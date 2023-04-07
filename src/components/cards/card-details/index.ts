@@ -1,3 +1,4 @@
-import CardDetails from "./CardDetails";
+import CardDetailsContent from "./CardDetailsContent";
+import CardDetailsImage from "./CardDetailsImage";
 
-export { CardDetails };
+export { CardDetailsImage, CardDetailsContent };

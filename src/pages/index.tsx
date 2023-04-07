@@ -1,4 +1,4 @@
-import { CardDetails } from "@/components/cards/card-details";
+import { CardDetailsContent } from "@/components/cards/card-details";
 import Head from "next/head";
 
 const Home = () => {
@@ -10,8 +10,8 @@ const Home = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="m-10 w-[636px]">
-        <CardDetails />
+      <div className="m-10 pt-5 max-w-[307px] w-full">
+        <CardDetailsContent />
       </div>
     </div>
   );
