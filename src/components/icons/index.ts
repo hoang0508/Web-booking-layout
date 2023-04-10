@@ -40,6 +40,11 @@ import IconWifi from "./IconWifi";
 import IconCarV2 from "./IconCarV2";
 import IconCarV3 from "./IconCarV3";
 import IconCheckV2 from "./IconCheckV2";
+import IconContract from "./IconContract";
+import IconPendingPay from "./IconPendingPay";
+import IconRemoveContract from "./IconRemoveContract";
+import IconReturnContract from "./IconReturnContract";
+import IconProgressPending from "./IconProgressPending";
 
 export {
   IconHeart,
@@ -84,4 +89,9 @@ export {
   IconCarV2,
   IconCarV3,
   IconCheckV2,
+  IconContract,
+  IconPendingPay,
+  IconRemoveContract,
+  IconReturnContract,
+  IconProgressPending,
 };

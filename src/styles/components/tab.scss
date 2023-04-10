@@ -1,8 +1,16 @@
 .tab-custom {
   .ant-tabs-nav-wrap {
     .ant-tabs-nav-list {
+      .ant-tabs-tab-btn {
+        &:active {
+          @apply text-primary;
+        }
+      }
       .ant-tabs-tab-active {
         .ant-tabs-tab-btn {
+          &:active {
+            @apply text-primary;
+          }
           @apply text-primary;
         }
       }

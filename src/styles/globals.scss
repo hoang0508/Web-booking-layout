@@ -25,8 +25,25 @@ input {
   .text-info-room {
     @apply font-primary font-normal text-ravi-black-100 text-sm;
   }
+  // Border
   .border-bottom-gray {
     @apply border-b border-ravi-gray-55 pb-4 mb-4;
+  }
+  // Card History
+  .border-left-item {
+    @apply border-l border-ravi-gray-55 pl-4;
+  }
+  .title-item-info--history {
+    @apply font-primary text-xs font-normal text-ravi-gray-80;
+  }
+  .text-item-info--history {
+    @apply font-primary text-base font-normal text-ravi-black-100;
+  }
+  .layout-list--history {
+    @apply flex-1 flex flex-col gap-y-4;
+  }
+  .layout-item--history {
+    @apply flex flex-col gap-y-[2px] font-primary;
   }
 }
 
