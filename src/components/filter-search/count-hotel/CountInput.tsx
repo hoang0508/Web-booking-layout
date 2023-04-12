@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import { IconMinus, IconPlus } from "../../icons";
 
 interface ICountInput {
-  count: number;
+  inputCount: number;
+  setInputCount: (value: React.SetStateAction<number>) => void;
 }
 
-const CountInput = ({ count }: ICountInput) => {
-  const [inputCount, setInputCount] = useState(count);
+const CountInput = ({ inputCount, setInputCount }: ICountInput) => {
   const handleDecrease = () => {
     if (inputCount === 0) return;
     setInputCount((inputCount) => inputCount - 1);

@@ -1,11 +1,11 @@
 import React from "react";
 import CardImageTrip from "../../../assets/images/card-image-trip.png";
 import Image from "next/image";
-import { ButtonTransparent } from "@/components/button";
+import { Button } from "@/components/button";
 
 const CardTrip = () => {
   return (
-    <div className="w-[225px]  bg-opacity-[rgba(0,0,0,0.2)] relative">
+    <div className="bg-opacity-[rgba(0,0,0,0.2)] relative">
       <div className="h-[424px]">
         <Image
           src={CardImageTrip}
@@ -20,7 +20,9 @@ const CardTrip = () => {
           sint. Velit officia consequat duis enim velit mollit. Exercitation
           veniam consequat sunt nostrud amet.
         </p>
-        <ButtonTransparent>Tìm kiếm ngay</ButtonTransparent>
+        <Button kind="secondary" type="button">
+          Tìm kiếm ngay
+        </Button>
       </div>
     </div>
   );

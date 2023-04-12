@@ -133,7 +133,9 @@ const CardDetailsContent = () => {
         </div>
       </div>
 
-      <Button className="w-full">Chọn phòng</Button>
+      <Button type="button" kind="primary" className="w-full">
+        Chọn phòng
+      </Button>
     </div>
   );
 };

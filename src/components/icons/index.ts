@@ -45,6 +45,12 @@ import IconPendingPay from "./IconPendingPay";
 import IconRemoveContract from "./IconRemoveContract";
 import IconReturnContract from "./IconReturnContract";
 import IconProgressPending from "./IconProgressPending";
+import IconMenuHistoryRoom from "./IconMenuHistoryRoom";
+import IconMenuPermission from "./IconMenuPermission";
+import IconMenuStar from "./IconMenuStar";
+import IconMenuSecurity from "./IconMenuSecurity";
+import IconMenuHistoryContract from "./IconMenuHistoryContract";
+import IconMenuFavourite from "./IconMenuFavourite";
 
 export {
   IconHeart,
@@ -94,4 +100,10 @@ export {
   IconRemoveContract,
   IconReturnContract,
   IconProgressPending,
+  IconMenuHistoryRoom,
+  IconMenuPermission,
+  IconMenuStar,
+  IconMenuSecurity,
+  IconMenuHistoryContract,
+  IconMenuFavourite,
 };

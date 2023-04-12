@@ -2,14 +2,12 @@
 
 body {
   .date-hotel--custom {
-    height: 66px;
-    border: 0;
     box-shadow: unset;
     position: relative;
     line-height: unset;
     background: unset;
     padding: unset;
-    padding-left: 20px;
+    @apply h-[66px] border-0 relative pl-5 pr-[26px];
     .ant-picker-input {
       @apply font-primary text-ravi-black-100 text-sm font-normal;
       input {
@@ -17,45 +15,35 @@ body {
         flex: unset;
       }
       &:nth-child(1) {
-        margin-left: 25px;
+        @apply ml-[25px];
       }
     }
     .ant-picker-input > input::placeholder {
       @apply font-primary text-ravi-black-100 text-sm font-normal;
     }
     .ant-picker-range-separator {
-      padding: 0;
-      position: relative;
-      color: transparent;
+      @apply pl-[10px] pr-[10px] py-0 relative text-transparent;
       .ant-picker-separator {
         display: none;
       }
     }
     .ant-picker-range-separator:after {
       content: url("../../assets/images/line.svg");
-      position: absolute;
-      top: -3px;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      padding-right: 40px;
+      @apply absolute top-[-3px] left-2/4 -translate-x-2/4 -translate-y-2/4 pr-5;
     }
     .ant-picker-active-bar {
-      @apply bg-primary;
+      margin-inline-start: unset;
+      @apply bg-primary ml-5;
     }
     &::before {
       content: url("../../assets/images/icon-clendar.svg");
-      position: absolute;
-      top: 55%;
-      transform: translateY(-50%);
+      @apply absolute -translate-y-2/4 top-[55%];
     }
   }
 }
 
 .custom-date--dropdown {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  @apply flex items-center justify-center flex-col;
   left: 27% !important;
   top: 66px !important;
   .ant-picker-range-wrapper {
@@ -63,29 +51,20 @@ body {
       display: none;
     }
     .ant-picker-panel-container {
-      width: 100%;
-      background: #ffffff;
-      box-shadow: 2px 4px 8px rgba(37, 37, 37, 0.25);
-      border-radius: 8px;
-      padding: 21px 26px 29px 24px;
+      @apply w-full bg-white shadow-["_2px_4px_8px_rgba(37,37,37,0.25)"] rounded-lg pt-[21px] pl-6 pb-[29px] pr-[26px];
       .ant-picker-panel-layout {
+        @apply grid;
         display: grid;
         .ant-picker-panels {
-          display: flex;
-          width: 100%;
-          justify-content: space-between;
-          gap: 0 26px;
+          @apply flex w-full justify-between gap-x-[26px];
           .ant-picker-panel:not(:last-child) {
-            width: 100%;
+            @apply w-full;
           }
           .ant-picker-panel {
-            flex: 1;
+            @apply flex-1;
           }
           .ant-picker-header {
-            padding: 0;
-            align-items: center;
-            border-bottom: none;
-            margin-bottom: 22px;
+            @apply p-0 items-center border-b-0 mb-[22px];
             .ant-picker-header-super-prev-btn,
             .ant-picker-header-super-next-btn {
               display: none;
@@ -111,17 +90,13 @@ body {
               width: 100%;
               thead {
                 tr {
-                  display: flex;
-                  gap: 0 18px;
-                  margin-bottom: 40px;
+                  @apply flex gap-x-[18px] mb-10;
                 }
               }
               .ant-picker-cell-disabled,
               .ant-picker-cell-in-range {
                 &::before {
-                  background-color: #fff7eb;
-                  width: 40px;
-                  height: 40px;
+                  @apply bg-ravi-pink-f7 w-10 h-10;
                 }
               }
               th {
@@ -133,7 +108,7 @@ body {
                 }
               }
               .ant-picker-cell-today .ant-picker-cell-inner::before {
-                border: none;
+                @apply border-none;
               }
               td.ant-picker-cell-range-start,
               td.ant-picker-cell-range-end {

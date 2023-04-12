@@ -17,37 +17,49 @@ interface IDateHotel {
   className: string;
 }
 
+const { RangePicker } = DatePicker;
 dayjs.extend(localizedFormat);
 dayjs.extend(updateLocale);
-
 dayjs.updateLocale("vi", {
   monthsShort: [
-    "Tháng 1",
-    "Tháng 2",
-    "Tháng 3",
-    "Tháng 4",
-    "Tháng 5",
-    "Tháng 6",
-    "Tháng 7",
-    "Tháng 8",
-    "Tháng 9",
-    "Tháng 10",
-    "Tháng 11",
+    "Tháng 1 ,",
+    "Tháng 2 ,",
+    "Tháng 3 ,",
+    "Tháng 4 ,",
+    "Tháng 5 ,",
+    "Tháng 6 ,",
+    "Tháng 7 ,",
+    "Tháng 8 ,",
+    "Tháng 9 ,",
+    "Tháng 10 ,",
+    "Tháng 11 ,",
     "Tháng 12",
   ],
 });
-const { RangePicker } = DatePicker;
-
 const dateFormat = "llll";
 
 const DateHotel = ({ className }: IDateHotel) => {
+  const [openDatePicker, setOpenDatePicker] = useState<boolean>(false);
   const [dateValue, setDateValue] = useState<any>(null);
   return (
     <ConfigProvider locale={locale}>
       <RangePicker
-        dropdownClassName={`custom-date--dropdown`}
+        open={openDatePicker}
+        onOpenChange={() => setOpenDatePicker(!openDatePicker)}
+        use12Hours={true}
+        popupClassName={`custom-date--dropdown`}
         className={`date-hotel--custom ${className}`}
-        suffixIcon={<IconArrowDown />}
+        suffixIcon={
+          <span
+            className={`${
+              openDatePicker
+                ? "rotate-180 duration-300 ease-linear"
+                : "rotate-0 duration-300 ease-linear"
+            }`}
+          >
+            <IconArrowDown />
+          </span>
+        }
         clearIcon={false}
         placeholder={["Nhận phòng", "Trả phòng"]}
         value={dateValue}

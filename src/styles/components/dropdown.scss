@@ -8,7 +8,19 @@
 
 .ml-custom {
   .ant-space {
-    margin-left: 30px;
+    @apply pl-5;
+    .ant-space-item {
+      .icon-arrow {
+        svg {
+          @apply rotate-0 duration-300 ease-linear;
+        }
+        &--translate {
+          svg {
+            @apply rotate-180 duration-300 ease-linear;
+          }
+        }
+      }
+    }
   }
 }
 

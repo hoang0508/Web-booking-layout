@@ -13,6 +13,7 @@ body {
       border-color: transparent;
       border-radius: 8px 0px 0px 8px;
       box-shadow: unset !important;
+      background: none !important;
       .ant-select-selection-item {
         display: flex;
         align-items: center;
@@ -25,10 +26,12 @@ body {
       }
     }
     .ant-select-arrow {
-      left: 18px;
-      transform: translateY(-50%);
       margin-top: unset;
       height: unset;
+      @apply -translate-y-2/4 left-[18px];
+    }
+    .ant-select-clear {
+      @apply bg-transparent text-ravi-black-100;
     }
   }
 }

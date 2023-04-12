@@ -1,0 +1,17 @@
+.menu-account {
+  &--active {
+    @apply relative bg-ravi-gray-f5 text-primary duration-300 ease-linear;
+    &:hover {
+      @apply bg-ravi-gray-f5 duration-300 ease-linear;
+    }
+    &::before {
+      content: "";
+      @apply absolute bg-primary w-1 h-full top-0 left-0;
+    }
+    svg {
+      path {
+        @apply fill-primary;
+      }
+    }
+  }
+}

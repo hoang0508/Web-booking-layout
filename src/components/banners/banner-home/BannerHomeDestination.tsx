@@ -29,7 +29,9 @@ const BannerHomeDestination = ({}: IBannerHomeDestination) => {
           sint. Velit officia consequat duis enim velit mollit. Exercitation
           veniam consequat sunt nostrud amet.
         </p>
-        <Button>Khám phá ngay</Button>
+        <Button kind="primary" type="button">
+          Khám phá ngay
+        </Button>
       </div>
       <div className="mt-auto mb-[10px] ml-5 bg-[rgba(255,255,255,0.7)] p-[10px] rounded-tl-[10px] rounded-bl-[10px]">
         <Swiper
@@ -38,7 +40,7 @@ const BannerHomeDestination = ({}: IBannerHomeDestination) => {
           slidesPerView={"auto"}
           navigation={true}
           modules={[Pagination, Navigation]}
-          className="banner-destination-swiper"
+          className="banner-destination-swiper global-custom-swiper"
         >
           {Array(12)
             .fill(0)

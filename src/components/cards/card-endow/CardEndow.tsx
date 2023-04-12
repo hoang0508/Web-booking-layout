@@ -14,7 +14,9 @@ const CardEndow = () => {
             Chỉ từ 117.000đ
           </span>
         </div>
-        <Button className="py-2 px-6 text-xs">Xem ưu đãi</Button>
+        <Button type="button" kind="primary" className="py-2 px-6 text-xs">
+          Xem ưu đãi
+        </Button>
       </div>
     </div>
   );

@@ -24,6 +24,7 @@ const SearchHotel = ({ className }: ISearchHotel) => {
         suffixIcon={<IconHotel />}
         clearIcon={<IconClose />}
         allowClear={true}
+        showArrow
         value={selected}
         dropdownRender={(menu) => (
           <div className="custom-select--show">{menu}</div>

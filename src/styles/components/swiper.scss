@@ -1,3 +1,14 @@
+.global-custom-swiper {
+  .swiper-button-next::after {
+    content: url("../../assets/images/icon-next.svg");
+    @apply top-2/4 left-2/4;
+  }
+  .swiper-button-prev::after {
+    content: url("../../assets/images/icon-prev.svg");
+    @apply top-2/4 left-2/4;
+  }
+}
+
 // custom swiper card
 
 .card-hover:hover .mySwiper-custom {

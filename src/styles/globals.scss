@@ -11,7 +11,7 @@ input {
 
 @layer base {
   body {
-    @apply font-primary text-base font-normal text-ravi-black-100 mx-auto bg-white;
+    @apply font-primary text-base font-normal text-ravi-black-100 mx-auto bg-blue-600;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     max-width: 1440px;
